@@ -179,5 +179,8 @@ struct InitInfo {
 /// \return Indicate whether the operation has succeed.
 [[nodiscard, maybe_unused, gnu::visibility("default")]] bool MakeDexFileTrusted(JNIEnv *env,
                                                                                 jobject cookie);
+
+[[maybe_unused, gnu::visibility("default")]] void updateTrampolineToOnlyRead();
+
 }  // namespace v1
 }  // namespace lsplant
